@@ -1,17 +1,17 @@
 {% set name = "python-cityhash" %}
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cityhash/cityhash-{{ version }}.tar.gz
-  sha256: 6f9eb09b725f0ccfa84e7eaab859d6adb646963f5a7a0d1e0a50ae269625877c
+  url: https://pypi.org/packages/source/c/cityhash/cityhash-{{ version }}.tar.gz
+  sha256: b8616c90bd5b0870a170878a3f02d0df786d3e5e06685e383418231afac40ea5
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
