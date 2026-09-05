@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/cityhash/cityhash-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/c/cityhash/cityhash-{{ version }}.tar.gz
   sha256: 7e35da9aaf5fcf91da3fea23405874db55ffa58b1abc441d39cce0c8704a9c15
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:
